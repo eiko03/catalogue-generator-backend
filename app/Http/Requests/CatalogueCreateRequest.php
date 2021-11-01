@@ -24,7 +24,8 @@ class CatalogueCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'=>'required'
+            'name'=>'required',
+            'product_id'=>'required|array',
         ];
     }
 }
